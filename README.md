@@ -2,6 +2,8 @@
 
 Just one of the things I'm learning: <https://github.com/hchiam/learning>
 
+Parcel is a web app bundler.
+
 <https://parceljs.org/>
 
 ```bash
