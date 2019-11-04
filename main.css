@@ -1,0 +1,7 @@
+body {
+  /* Reference an image file */
+  background: url('./barcode.png');
+  color: red;
+  width: 100vw;
+  height: 100vh;
+}
