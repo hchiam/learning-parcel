@@ -4,7 +4,7 @@ Just one of the things I'm learning: <https://github.com/hchiam/learning>
 
 Parcel is a web app bundler. It's like Webpack, but with [much less friction to set up your build](https://www.youtube.com/watch?v=b-6BeS-22yw).
 
-You can see an example [here](https://github.com/hchiam/simple-site) based directly off of a [quick tutorial by Maks Akymenko](https://css-tricks.com/why-parcel-has-become-my-go-to-bundler-for-development/).
+You can see an example [here](https://github.com/hchiam/simple-site-with-parcel) based directly off of a [quick tutorial by Maks Akymenko](https://css-tricks.com/why-parcel-has-become-my-go-to-bundler-for-development/).
 
 ## Example Setup
 
