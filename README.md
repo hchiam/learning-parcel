@@ -31,3 +31,20 @@ parcel build index.html --experimental-scope-hoisting
 ```
 
 This does not auto-rerun whenever you save a file, but you'll notice the smaller .js file sizes in the `dist` folder.
+
+## Inline JS into HTML
+
+Try using [parcel-plugin-inline-source](https://www.npmjs.com/package/parcel-plugin-inline-source) after you `npm install parcel --save-dev`
+
+```bash
+npm install parcel-plugin-inline-source --save-dev
+```
+
+```html
+<script src="./some-script.js" inline="inline"></script>
+```
+
+```bash
+# assuming both some-template.html and some-script.js are both inside the templates folder
+parcel build templates/*.html --no-source-maps --no-cache; rm dist/*.js; rm dist/*.jpg
+```
