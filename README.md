@@ -36,17 +36,22 @@ This does not auto-rerun whenever you save a file, but you'll notice the smaller
 
 ## Inline JS into HTML
 
-Try using [parcel-plugin-inline-source](https://www.npmjs.com/package/parcel-plugin-inline-source) after you `npm install parcel --save-dev`
+1) Make sure to use `inline="inline"` when you link the .js file to the .html file:
 
-```bash
-npm install parcel-plugin-inline-source --save-dev
-```
+    ```html
+    <script src="./index.js" inline="inline"></script>
+    ```
 
-```html
-<script src="./some-script.js" inline="inline"></script>
-```
+2) Install [parcel-plugin-inline-source](https://www.npmjs.com/package/parcel-plugin-inline-source) as a development dependency:
 
-```bash
-# assuming both some-template.html and some-script.js are both inside the templates folder
-parcel build templates/*.html --no-source-maps --no-cache; rm dist/*.js; rm dist/*.jpg
-```
+    ```bash
+    npm install parcel-plugin-inline-source --save-dev
+    ```
+
+3) Then this command will use parcel-plugin-inline-source:
+
+    ```bash
+    parcel build index.html --no-source-maps --no-cache;
+    ```
+
+4) You might want to do this too: `rm dist/*.js; rm dist/*.jpg`
