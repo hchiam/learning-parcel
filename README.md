@@ -51,7 +51,13 @@ This does not auto-rerun whenever you save a file, but you'll notice the smaller
 3) Then this command will use parcel-plugin-inline-source:
 
     ```bash
-    parcel build index.html --no-source-maps --no-cache;
+    parcel build index.html --no-source-maps --no-cache
     ```
 
 4) You might want to do this too: `rm dist/*.js; rm dist/*.jpg`
+
+## Babel core-js 3 ponyfill
+
+(To transform modern syntax into code accessible to older browsers without breaking native built-ins.)
+
+<https://github.com/kubenstein/parcel-babel-runtime-example>
