@@ -56,6 +56,12 @@ This does not auto-rerun whenever you save a file, but you'll notice the smaller
 
 4) You might want to do this too: `rm dist/*.js; rm dist/*.jpg`
 
+## More options
+
+<https://parceljs.org/cli.html#options>
+
+For example: `--out-dir`, `--port`, `--out-file`, `--https`
+
 ## Babel core-js 3 ponyfill
 
 (To transform modern syntax into code accessible to older browsers without breaking native built-ins.)
