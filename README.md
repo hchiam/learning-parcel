@@ -60,7 +60,7 @@ This does not auto-rerun whenever you save a file, but you'll notice the smaller
 
 <https://parceljs.org/cli.html#options>
 
-For example: `--out-dir`, `--port`, `--out-file`, `--https`
+For example: `--out-dir`, `--port`, `--out-file`, `--https`, `--cache-dir`
 
 ## Babel core-js 3 ponyfill
 
