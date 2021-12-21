@@ -62,6 +62,12 @@ This does not auto-rerun whenever you save a file, but you'll notice the smaller
 
 For example: `--out-dir`, `--port`, `--out-file`, `--https`, `--cache-dir`
 
+And this command to auto-open a browser tab:
+
+```sh
+parcel demo/index.html --open
+```
+
 ## Babel core-js 3 ponyfill
 
 (To transform modern syntax into code accessible to older browsers without breaking native built-ins.)
