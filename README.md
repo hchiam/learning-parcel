@@ -26,7 +26,7 @@ The command above will auto-rerun whenever you save a file.
 
 ## Tree Shaking and Minification
 
-In other words, to automatically [trim off unused code](https://en.wikipedia.org/wiki/Tree_shaking), and to [shorten the code that *is* used](https://en.wikipedia.org/wiki/Minification_(programming)), you run a different command:
+In other words, to automatically [trim off unused code](https://en.wikipedia.org/wiki/Tree_shaking), and to [shorten the code that _is_ used](<https://en.wikipedia.org/wiki/Minification_(programming)>), you run a different command:
 
 ```bash
 parcel build index.html --experimental-scope-hoisting
@@ -36,25 +36,25 @@ This does not auto-rerun whenever you save a file, but you'll notice the smaller
 
 ## Inline JS into HTML
 
-1) Make sure to use `inline="inline"` when you link the .js file to the .html file:
+1. Make sure to use `inline="inline"` when you link the .js file to the .html file:
 
-    ```html
-    <script src="./index.js" inline="inline"></script>
-    ```
+   ```html
+   <script src="./index.js" inline="inline"></script>
+   ```
 
-2) Install [parcel-plugin-inline-source](https://www.npmjs.com/package/parcel-plugin-inline-source) as a development dependency:
+2. Install [parcel-plugin-inline-source](https://www.npmjs.com/package/parcel-plugin-inline-source) as a development dependency:
 
-    ```bash
-    npm install parcel-plugin-inline-source --save-dev
-    ```
+   ```bash
+   npm install parcel-plugin-inline-source --save-dev
+   ```
 
-3) Then this command will use parcel-plugin-inline-source:
+3. Then this command will use parcel-plugin-inline-source:
 
-    ```bash
-    parcel build index.html --no-source-maps --no-cache
-    ```
+   ```bash
+   parcel build index.html --no-source-maps --no-cache
+   ```
 
-4) You might want to do this too: `rm dist/*.js; rm dist/*.jpg`
+4. You might want to do this too: `rm dist/*.js; rm dist/*.jpg`
 
 ## More options
 
