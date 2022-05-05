@@ -9,7 +9,14 @@ You can see an example [here](https://github.com/hchiam/simple-site-with-parcel)
 ## Example Setup
 
 ```bash
-npm install -g parcel-bundler
+npm install -g parcel
+# v1 parcel-bundler has been deprecated
+```
+
+or with [`yarn`](https://github.com/hchiam/learning-yarn):
+
+```sh
+yarn global add parcel
 ```
 
 More: <https://parceljs.org>
